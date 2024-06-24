@@ -4,7 +4,7 @@ function Header() {
     
     return (
         <div className="Header">
-            <h1> A Melhor Academia do Bairro </h1>
+            <h1> Academia Preços Diferenciados </h1>
         </div>
 
     )

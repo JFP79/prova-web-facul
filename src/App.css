@@ -121,3 +121,101 @@ nav ul li a:hover {
 .opcoes button:hover {
   background-color: #0056b3;
 }
+
+.opção-escolhida {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+  line-height: 1.5;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;  
+}
+
+.login-form {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.login-form h2 {
+  margin-bottom: 10px;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column; 
+}
+
+.login-form label {
+  margin-bottom: 5px;
+}
+
+.login-form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+} 
+
+.login-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+.form-pedido {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 20px;
+} 
+
+.form-pedido h2 {
+  margin-bottom: 10px;
+}
+
+.form-pedido form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-pedido label {
+  margin-bottom: 5px;
+} 
+
+.form-pedido input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-pedido button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-pedido button:hover {
+  background-color: #0056b3;
+} 
+

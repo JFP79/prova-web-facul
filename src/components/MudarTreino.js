@@ -10,7 +10,6 @@ function MudarTreino() {
 
   return (
     <div className="mudar-treino">
-      <h2>Mudar Treino</h2>
       <p>Opção selecionada: <strong>{opcaoSelecionada}</strong></p>
       <div className="opcoes">
         <button onClick={() => handleOptionChange('Treino A')}>Treino A</button>

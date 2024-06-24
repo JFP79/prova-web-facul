@@ -19,7 +19,7 @@ function Trainer() {
       </div>
       {opcaoSelecionada && (
         <div className="opcao-escolhida">
-          Opção escolhida: <strong>{opcaoSelecionada}</strong>
+          Opção Escolhida: <strong>{opcaoSelecionada}</strong>
         </div>
       )}
     </div>

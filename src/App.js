@@ -4,19 +4,19 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Titulo from "./components/Titulo";
-import BotaoSomar from "./components/BotaoSomar";
-import TreinoList from "./components/TreinoList";
 import Trainer from './pages/Trainer';
-import MudarTreino from "./components/MudarTreino"; 
+import MudarTreino from './components/MudarTreino';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import FormPedido from './components/FormPedido';
+
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Header />
-        <Titulo />
-        <TreinoList />
+        <FormPedido />
         <nav>
           <ul>
             <li>
@@ -33,10 +33,12 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/trainer" element={<Trainer />} /> 
-          <Route path="/contact" element={<Contact />} />
-          
+          <Route path="/contact" element={<Contact />} />  
         </Routes>
+
+        < MudarTreino />  
 
         <Footer />
       </Router>
