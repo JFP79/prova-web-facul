@@ -6,8 +6,8 @@ import MudarTreino from '../../components/MudarTreino';
 function Trainer() {
   return (
     <div className="treino">
-      <h2>Qual ser curso de mergulho desejado ?</h2>
-      <div className="opcoes">
+      <h2>Qual curso de mergulho deseja fazer ?</h2>
+            <div className="opcoes">
           <MudarTreino />
       </div>
       

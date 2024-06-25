@@ -5,9 +5,9 @@ function MudarTreino() {
   const [opcaoSelecionada, setOpcaoSelecionada] = useState('treinoA');
 
   const opcoes = {
-    treinoA: "Treino A",
-    treinoB: "Treino B",
-    treinoC: "Treino C",
+    treinoA: "Dive Master",
+    treinoB: "Advanced Dive",
+    treinoC: "Open Water",
   };
 
   const handleOptionChange = (event) => {
@@ -23,7 +23,7 @@ function MudarTreino() {
         </div>
       )}
       <div className="opcoes">
-        <img src='./logotipo-peso.webp' alt="Logotipo Peso" />
+        <img id = "logo" src='./Padi_Logo.webp' alt="Logotipo Peso" />   
         <select value={opcaoSelecionada} onChange={handleOptionChange}>
           {Object.keys(opcoes).map((key) => (
             <option value={key} key={key}>
