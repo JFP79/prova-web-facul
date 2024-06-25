@@ -1,14 +1,11 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import './App.css';
-import Contact from './pages/Contact';
-import Home from './pages/Home';
+import Contact from './pages/Contact/Contact';
+import Home from './pages/Home/Home';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Trainer from './pages/Trainer';
-import MudarTreino from './components/MudarTreino';
-import { useState } from 'react';
-import { useEffect } from 'react';
-import FormPedido from './components/FormPedido';
+import Trainer from './pages/Trainer/Trainer';
+import './App.css';
+
 
 
 function App() {
@@ -16,7 +13,6 @@ function App() {
     <div className="App">
       <Router>
         <Header />
-        <FormPedido />
         <nav>
           <ul>
             <li>
@@ -30,18 +26,13 @@ function App() {
             </li>
           </ul>
         </nav>
-
         <Routes>
-          <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/trainer" element={<Trainer />} /> 
           <Route path="/contact" element={<Contact />} />  
         </Routes>
-
-        < MudarTreino />  
-
-        <Footer />
       </Router>
+      <Footer />
     </div>
   );
 }

@@ -2,22 +2,39 @@ import React from 'react';
 import { useState } from 'react';
 
 function MudarTreino() {
-  const [opcaoSelecionada, setOpcaoSelecionada] = useState('Treino A');
+  const [opcaoSelecionada, setOpcaoSelecionada] = useState('treinoA');
 
-  const handleOptionChange = (option) => {
+  const opcoes = {
+    treinoA: "Treino A",
+    treinoB: "Treino B",
+    treinoC: "Treino C",
+  };
+
+  const handleOptionChange = (event) => {
+    const option = event.target.value;
     setOpcaoSelecionada(option);
   };
 
   return (
     <div className="mudar-treino">
-      <p>Opção selecionada: <strong>{opcaoSelecionada}</strong></p>
+      {opcaoSelecionada && (
+        <div className="opcao-escolhida">
+          Curso Escolhido: <strong>{opcoes[opcaoSelecionada]}</strong>
+        </div>
+      )}
       <div className="opcoes">
-        <button onClick={() => handleOptionChange('Treino A')}>Treino A</button>
-        <button onClick={() => handleOptionChange('Treino B')}>Treino B</button>
-        <button onClick={() => handleOptionChange('Treino C')}>Treino C</button>
+        <img src='./logotipo-peso.webp' alt="Logotipo Peso" />
+        <select value={opcaoSelecionada} onChange={handleOptionChange}>
+          {Object.keys(opcoes).map((key) => (
+            <option value={key} key={key}>
+              {opcoes[key]}
+            </option>
+          ))}
+        </select>
       </div>
     </div>
   );
 }
+
 
 export default MudarTreino;

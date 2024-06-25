@@ -8,9 +8,9 @@
 }
 
 .Header { 
-  width: 80%;
-  background-color: #333;
-  color: rgb(222, 22, 69); 
+  width: 100%;
+  background-color: gray;
+  color: #0056b3; 
   padding: 10px;
   text-align: center;
   margin-bottom: 20px;
@@ -18,16 +18,16 @@
 
 .Titulo { 
   width: 45%;
-  background-color: #333;
-  color: rgb(15, 85, 198); 
+  background-color: gray;
+  color: #a3cddf; 
   padding: 10px;
   text-align: center;
   margin-bottom: 20px;
 }
 
 .Footer {
-  background-color: #333;
-  color: #e8d90e;
+  background-color: gray;
+  color: #b9eaeb;
   padding: 5px;
   position: fixed;
   bottom: 0;
@@ -63,7 +63,7 @@ nav ul li {
   background-color: #f0f0f0;
 }
 
-nav ul li a:hover {
+.nav ul li a:hover {
   background-color: #ccc;
   color: #fff;
 }
@@ -218,4 +218,46 @@ nav ul li a:hover {
 .form-pedido button:hover {
   background-color: #0056b3;
 } 
+
+.dive {
+  background-color: hsl(252, 72%, 26%); 
+  padding: 15px;
+  border: 1px solid #161f84;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.dive h1 {
+  margin-bottom: 5px;
+} 
+
+.dive ul {
+  list-style: cross-fades;
+  padding: 0;
+  margin: 0;
+} 
+
+.dive li {    
+  padding: 0;
+  margin: 0;
+}
+
+.dive button {
+  font-size: 16px;
+  background-color: #007bff;
+  color: #300e7e;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 5%;   
+} 
+
+.dive button:hover {
+  background-color: white;
+} 
+
+.contact {
+  height: 100vh;
+  width: 100%;
+}
 
