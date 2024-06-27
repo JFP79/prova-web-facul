@@ -1,10 +1,12 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Contact from './pages/Contact/Contact';
-import Home from './pages/Home/Home';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from "./pages/Home";
+import Transacoes from "./pages/Transacoes";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Trainer from './pages/Trainer/Trainer';
+import Titulo from "./components/Titulo";
+import MoneyList from './components/MoneyList';
 import './App.css';
+
 
 
 
@@ -13,25 +15,13 @@ function App() {
     <div className="App">
       <Router>
         <Header />
-        <nav>
-          <ul>
-            <li>
-              <Link to="/home">Home</Link>
-            </li>
-            <li>
-              <Link to="/trainer">Trainer</Link> 
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </nav>
+        <Titulo></Titulo>
         <Routes>
           <Route path="/home" element={<Home />} />
-          <Route path="/trainer" element={<Trainer />} /> 
-          <Route path="/contact" element={<Contact />} />  
+          <Route path="/transacoes" element={<Transacoes />} />  
         </Routes>
       </Router>
+      <MoneyList /> 
       <Footer />
     </div>
   );

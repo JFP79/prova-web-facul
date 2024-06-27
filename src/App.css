@@ -9,17 +9,17 @@
 
 .Header { 
   width: 100%;
-  background-color: gray;
-  color: #0056b3; 
+  background-color: black;
+  color: gray; 
   padding: 10px;
-  text-align: center;
+  text-align: left;
   margin-bottom: 20px;
 }
 
 
 .Footer {
-  background-color: gray;
-  color: #b9eaeb;
+  background-color: black;
+  color: gray;
   padding: 5px;
   position: fixed;
   bottom: 0;
@@ -27,243 +27,69 @@
   text-align: center;
 }
 
-.nav {
-  margin-bottom: 10px;
+.Navegation {
   display: flex;
-  justify-content: center;
-
-}
-
-.nav ul {
-  list-style-type: none;
-  padding: 0;
-  justify-content: center;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 10px;
-  margin-left: 10px;
-  justify-content: center;
-}
-
-.nav ul li a {
-  color: #333;
-  text-decoration: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  background-color: #f0f0f0;
-}
-
-.nav ul li a:hover {
-  background-color: #ccc;
-  color: #fff;
-}
-
-.page-content {
-  padding: 15px;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 15px;
-}
-
-.page-content h2 {
-  color: #2911cb;
-  margin-bottom: 10px;
-  text-align: center;
-  padding: 5px;
-  line-height: normal;
-}
-
-.page-content p {
-  color: #666;
-  line-height: 1.5;
-  text-align: center;
-  padding: 10px;   
-}
-
-.treino {
-  background-color: #f0f0f0;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-top: 20px;
-}
-
-.treino h2 {
-  margin-bottom: 10px;
-}
-
-.opcoes {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.opcoes button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.opcoes button:hover {
-  background-color: #0056b3;
-}
-
-.opção-escolhida {
-  margin-top: 15px;
-  text-align: center;
-  font-size: 15px;
-  font-weight: bold;
-  color: #333;
-  line-height: 1.5;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f0f0f0;  
-}
-
-.login-form {
-  background-color: #f0f0f0;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-top: 20px;
-}
-
-.login-form h2 {
-  margin-bottom: 10px;
-}
-
-.login-form form {
-  display: flex;
-  flex-direction: column; 
-}
-
-.login-form label {
-  margin-bottom: 5px;
-}
-
-.login-form input {
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-} 
-
-.login-form button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.login-form button:hover {
-  background-color: #0056b3;
-}
-
-.form-pedido {
-  background-color: #f0f0f0;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-top: 20px;
-} 
-
-.form-pedido h2 {
-  margin-bottom: 10px;
-}
-
-.form-pedido form {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-pedido label {
-  margin-bottom: 5px;
-} 
-
-.form-pedido input {
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.form-pedido button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.form-pedido button:hover {
-  background-color: #0056b3;
-} 
-
-.dive {
-  background-color: hsl(252, 72%, 26%); 
-  padding: 15px;
-  border: 1px solid #161f84;
-  border-radius: 5px;
-  margin-top: 15px;
-}
-
-.dive h1 {
-  margin-bottom: 5px;
-} 
-
-.dive ul {
-  list-style: cross-fades;
-  padding: 0;
-  margin: 0;
-} 
-
-.dive li {    
-  padding: 0;
-  margin: 0;
-}
-
-.dive button {
-  font-size: 16px;
-  background-color: #007bff;
-  color: #300e7e;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-top: 5%;   
-} 
-
-.dive button:hover {
-  background-color: white;
-} 
-
-.contact {
-  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-}
-
-#logo {
-  width: 200px;
-  height: 200px;
-}
-
-#isla {
-  width: 150px;
-  height: 150px;
-  margin-top: 20px;
-  margin-left: 75px;
+  background-color: black;
+  color: gray;
+  padding: 10px;
+  text-align: left;
   margin-bottom: 20px;
+}
+
+.Navegation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.Navegation li {
+  margin-right: 20px;
+  font-size: 20px;
+  align-items: left;
+}
+
+.Navegation a {
+  color: gray;
+  text-decoration: none;
+}
+
+.Navegation a:hover {
+  color: white;
+}
+
+.Titulo {
+  margin-bottom: 20px;
+} 
+
+.Titulo h1 {
+  margin: 15px;
+}
+
+.Titulo p {
+  margin: 15px;
+}
+
+.MoneyList {
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+}
+
+td {
+  display: table-cell;
+  vertical-align: inherit;
+  unicode-bidi: isolate;
+}
+
+table {
+  border-collapse: separate;
+  text-indent: initial;
+  border-spacing: 1px;
 }
 
 
