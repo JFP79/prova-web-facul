@@ -9,10 +9,12 @@
 
 .Header { 
   width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: black;
   color: gray; 
   padding: 10px;
-  text-align: left;
   margin-bottom: 20px;
 }
 
@@ -49,7 +51,8 @@
 .Navegation li {
   margin-right: 20px;
   font-size: 20px;
-  align-items: left;
+  font-weight: bold;
+
 }
 
 .Navegation a {
@@ -67,6 +70,7 @@
 
 .Titulo h1 {
   margin: 15px;
+  display: flex;
 }
 
 .Titulo p {
@@ -91,6 +95,25 @@ table {
   text-indent: initial;
   border-spacing: 1px;
 }
+
+.Transacoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+}
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+}
+
+
+
+
+
 
 
 

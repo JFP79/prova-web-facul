@@ -29,7 +29,7 @@ function MoneyList() {
     
     useEffect(() => {
         setMoneyList(lista);
-    }, []);
+    }, [lista]);
     
     return (
         <div>
